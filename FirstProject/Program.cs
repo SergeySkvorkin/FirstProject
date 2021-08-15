@@ -7,8 +7,17 @@ namespace FirstProject
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Convertations Converting = new Convertations();
-            int a = Converting.FromStringToInt32("1");
+            Console.WriteLine("Something else");
+
+            int a;
+            string v = Console.ReadLine();
+            a = int.Parse(v);
+            Console.WriteLine(v);
+            while (a > 1) 
+            {
+                Console.WriteLine(a);
+                a = a - 1;
+            }
         }
     }
 }

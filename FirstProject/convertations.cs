@@ -10,7 +10,17 @@ namespace FirstProject
     {
         public int FromStringToInt32(string str)
         {
-            int result = Convert.ToInt32(str);
+            int result;
+            try
+            {
+                result = Convert.ToInt32(str);
+            }
+            catch (Exception)
+            {
+
+                return 0;
+            }
+            
 
             return result;
         }
